@@ -1,0 +1,44 @@
+.packD{
+    padding-top: 20px;
+    display: flex;
+    place-content: center;
+  }
+  .packD .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 10px;
+    grid-auto-rows: minmax(50px, auto);
+  
+  }
+  
+  .packD .head {
+    background-color: rgba(21, 110, 110, 0.5);
+    padding-top: 5px;
+    border-style: solid;
+    border-color: black;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    text-align: center;
+    font-size: xx-large;
+  }
+  .packD .cost{
+    background-color: rgba(223, 234, 234, 0.265);
+    border: 1px solid #ccc;
+    grid-column: 3;
+    grid-row: 2;
+  }
+  
+  .packD .thispackdet{
+
+    background-color: rgba(223, 234, 234, 0.265);
+    border: 1px solid #ccc;
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+  
+  .packD .dest{
+    background-color: rgba(223, 234, 234, 0.265);
+    border: 1px solid #ccc;
+    grid-column: 1/4;
+    grid-row: 3;
+  }

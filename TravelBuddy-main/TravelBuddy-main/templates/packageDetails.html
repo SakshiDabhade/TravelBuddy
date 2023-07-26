@@ -1,0 +1,28 @@
+{% load static %}
+<link rel="stylesheet" href="../static/css/nav.css?{% now "U" %}">
+<link rel="stylesheet" href="../static/css/home.css?{% now "U" %}">
+<link rel="stylesheet" href="../static/css/packageDet.css?{% now "U" %}">
+{% include 'navbar.html' %}
+
+<div class="packD">
+    <div class="wrapper">
+      <div class="head">
+        <div class="pid"> {{PID}}:  {{From_City}}, {{From_State}}  ------------- {{Dest}}</div>
+      </div>
+      <div class="thispackdet">Season: {{Season}} Days: {{NoOfDays}} Rating: {{Rating}}</div>
+      <div class="cost">Rs. 5000/day</div>
+      <div class="dest">
+        dest1<br>dest2<br>dest3
+      </div>  
+    </div> 
+</div>
+
+
+{% comment %} data = {
+    "packages" : [
+    {"PID": 1001, 'From_City': 'Pune', 'From_State' : 'Maharashtra' , 'Dest' : 'New Delhi', 'NoOfDays': 5, 'Season': 'Winter', 'Rating': 4.1, 'Budget_Type' : 1},
+    {"PID": 1004, 'From_City': 'New Delhi', 'From_State' : 'New Delhi' , 'Dest' : 'Jammu and Kashmir', 'NoOfDays': 8, 'Season': 'Summer', 'Rating': 4.5, 'Budget_Type' : 3}
+    ]
+} {% endcomment %}
+
+ 
